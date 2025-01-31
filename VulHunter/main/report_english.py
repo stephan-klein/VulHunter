@@ -21,10 +21,10 @@ from reportlab.lib.enums import TA_JUSTIFY
 
 import reportlab.lib, reportlab.platypus
 
-pdfmetrics.registerFont(TTFont('hei', "MSYH.TTC"))
-pdfmetrics.registerFont(TTFont('roman', "simsun.ttc"))
-pdfmetrics.registerFont(TTFont('heiti', "simhei.ttf"))
-pdfmetrics.registerFont(TTFont('roman', "times.ttf"))
+pdfmetrics.registerFont(TTFont('hei', "/usr/share/fonts/chinese/MSYH.TTC"))
+pdfmetrics.registerFont(TTFont('roman', "/usr/share/fonts/chinese/simsun.ttc"))
+pdfmetrics.registerFont(TTFont('heiti', "/usr/share/fonts/chinese/SimHei.ttf"))
+pdfmetrics.registerFont(TTFont('roman', "/usr/share/fonts/chinese/times.ttf"))
 month_convert = {'1月':'January','2月':'February','3月':'March','4月':'April','5月':'May','6月':'June','7月':'July','8月':'August','9月':'September','10月':'October','11月':'November','12月':'December'}
 
 time_start = None

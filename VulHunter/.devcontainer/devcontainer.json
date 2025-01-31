@@ -1,0 +1,11 @@
+{
+    "name": "Python 3",
+    "build": {
+        "context": "..",  // Set the build context to the parent folder
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+    "--network=bridge",
+    "--memory=16gb"]
+    // ...existing json...
+}

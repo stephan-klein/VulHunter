@@ -1,3 +1,10 @@
+# Fork Preable
+
+Used Test Commands:
+
+`python3 main/main.py --contract contracts_test/reentrancy_eth_0424.sol --solc-version 0.4.24 --filetype solidity --model-dir models --instance-len 10 --detectors reentrancy-eth --report reentrancy_eth_0424.pdf`
+
+
 # VulHunter, an detection method based on multi-instance learning and machine learning for Ethereum smart contracts
 
 <img src="./logo.png" alt="Logo" align="left" width="350"/>
