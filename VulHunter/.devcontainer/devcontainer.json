@@ -4,8 +4,12 @@
         "context": "..",  // Set the build context to the parent folder
         "dockerfile": "Dockerfile"
     },
-    "runArgs": [
-    "--network=bridge",
-    "--memory=16gb"]
-    // ...existing json...
+    "runArgs": ["--network=bridge","--memory=16gb"],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "juanblanco.solidity"
+            ]
+        }
+    }
 }

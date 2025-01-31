@@ -2,7 +2,19 @@
 
 Used Test Commands:
 
-`python3 main/main.py --contract contracts_test/reentrancy_eth_0424.sol --solc-version 0.4.24 --filetype solidity --model-dir models --instance-len 10 --detectors reentrancy-eth --report reentrancy_eth_0424.pdf`
+`python3 main/main.py --contract contracts_test/thedao.sol --solc-version 0.6.12 --filetype solidity --model-dir models --instance-len 10 --detectors reentrancy-eth --report reentrancy_thedao.pdf`
+
+Observations:
+According to the installation guide, the project is using py solidity compiler 0.10.1 from 2020. When contracts are compiled with solc version > 0.6.12 the wrapper reports an error 
+```
+  File "/usr/local/lib/python3.8/site-packages/solcx/main.py", line 62, in _parse_compiler_output
+    data["abi"] = json.loads(data["abi"])
+  File "/usr/local/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+  TypeError: the JSON object must be str, bytes or bytearray, not list
+```
+
+This is due to in newer solc versions the abi can be a list of objects if not invoked via the --combined-json argument
 
 
 # VulHunter, an detection method based on multi-instance learning and machine learning for Ethereum smart contracts

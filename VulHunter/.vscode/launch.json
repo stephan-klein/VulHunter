@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug VulHunter",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main/main.py",
+            "args": [
+                "--contract", "contracts_test/thedao.sol",
+                "--solc-version", "0.8.10",
+                "--filetype", "solidity",
+                "--model-dir", "models",
+                "--instance-len", "10",
+                "--detectors", "reentrancy-eth"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
