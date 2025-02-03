@@ -831,11 +831,13 @@ def train_test_LSTM_with_multi_instance(train_bytecodes, train_labels, test_byte
     best_f1 = 0
     DataLoader_train_upd = None
     for epoch in range(epoch_num):
+        start_time = time.time()  # record start time
         model.train()
         if epoch == 0:
             train(epoch,DataLoader_train)
         else:
             train(epoch,DataLoader_train_upd)
+        
         model.eval()
         new_datas, new_labels, new_bags = updata_data(DataLoader_train)
         print("ceshi!")
@@ -851,6 +853,9 @@ def train_test_LSTM_with_multi_instance(train_bytecodes, train_labels, test_byte
         recall = metrics.recall_score(true_labels, predict_labels, average="binary")
         precision = metrics.precision_score(true_labels, predict_labels, average="binary")
         F1 = metrics.f1_score(true_labels, predict_labels, average="binary")
+        
+        elapsed = time.time() - start_time   # calculate elapsed time
+        print("Epoch {} training time: {:.2f} seconds".format(epoch, elapsed))
 
         print("{} Accuracy on test set: {}, recall: {}, precision: {}, f1: {}".format(epoch, acc, recall, precision, F1))
         if best_acc <= acc:
