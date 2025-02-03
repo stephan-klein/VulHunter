@@ -20,6 +20,7 @@ import sys
 from sklearn import metrics
 import sklearn
 import json
+from torch.cuda.amp import autocast, GradScaler
 
 # from decimal import *
 # from pyevmasm import disassemble_hex
@@ -657,66 +658,49 @@ def train_test_LSTM_with_multi_instance(train_bytecodes, train_labels, test_byte
 
     # scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda = lambda epoch: 0.1*epoch)
 
+    from torch.cuda.amp import autocast, GradScaler  # add at the top of your file
+
     def train(epoch, dataloader):
         running_loss = 0.0
-        # print("lr: {}".format(scheduler.get_lr()))
-    #     print(type(DataLoader_train))
-        for batch_idx,data in enumerate(dataloader):
-            inputs,target,bags = data
+        scaler = GradScaler()  # initialize the scaler
+        for batch_idx, data in enumerate(dataloader):
+            inputs, target, bags = data
             if torch.cuda.is_available():
                 inputs = inputs.cuda().float()
                 target = target.cuda().long()
             else:
                 inputs = inputs.float()
                 target = target.long()
-            optimizer.zero_grad()  #梯度值清零
-            outputs, _ = model(inputs)   #前向传播
-            # print(outputs)
-            # print(type(outputs))
-            bias = torch.sub(outputs.data[:,0], outputs.data[:,1], alpha=1)
-            bag_index = {}
-            bags = bags.numpy()
-            for i in range(len(bags)):
-                if bags[i] not in bag_index:
-                    bag_index[bags[i]] = []
-                bag_index[bags[i]].append(i)
+            optimizer.zero_grad()  # clear gradients
+
+            # Wrap forward and loss computation in autocast for mixed precision
+            with autocast():
+                outputs, _ = model(inputs)   # forward pass
+                bias = torch.sub(outputs.data[:, 0], outputs.data[:, 1], alpha=1)
+                bag_index = {}
+                bags = bags.numpy()
+                for i in range(len(bags)):
+                    if bags[i] not in bag_index:
+                        bag_index[bags[i]] = []
+                    bag_index[bags[i]].append(i)
+                true_label_index = []
+                pre_index = []
+                for bag_val, index_val in bag_index.items():
+                    true_label_index.append(index_val[0])
+                    pre_index.append(index_val[torch.argmin(bias[index_val])])
+                loss = criterion(outputs[pre_index], target[true_label_index]) + 0.6 * criterion(outputs, target)
             
-            # print(bag_index)
-            # predicted = predicted.cpu().numpy
-            # outputs = outputs.cpu()
-            # target = target.numpy()
-            true_label_index = []
-            pre_index = []
-            for bag_val, index_val in bag_index.items():
-                true_label_index.append(index_val[0])
-                # print(bias[index_val].size())
-                pre_index.append(index_val[torch.argmin(bias[index_val])])
-                # pre_label.append(outputs[index_val][pre_index])
-            # print(outputs.cpu().detach().numpy())
-            # pre_label = outputs[pre_index]
-            # target = target[true_label_index]
-            # print(pre_label.size())
-            # print(target.size())
-            loss = criterion(outputs[pre_index],target[true_label_index]) + 0.6 * criterion(outputs,target)
-            loss.backward()   #反向传播
-            optimizer.step()  #更新权重
+            # Use scaler to scale loss and update model
+            scaler.scale(loss).backward()   # backward pass with scaled loss
+            scaler.step(optimizer)           # update weights
+            scaler.update()                  # update the scale for next iteration
 
-            # del bag_index
-            # gc.collect()
-
-            running_loss+=loss.item()
-            if batch_idx %10==9:
-                loss = running_loss/10
-                # print('[%d,%5d] loss:%.3f' %(epoch+1,batch_idx+1,loss)) #输出loss---
+            running_loss += loss.item()
+            if batch_idx % 10 == 9:
+                avg_loss = running_loss / 10
                 if running_loss < 1e-4:
                     break
-                running_loss=0.0
-            
-            # loss = validate_loss(validdataloader)
-            # loss.backward()   #反向传播
-            # optimizer.step()  #更新权重
-            # print('[%d,%5d] loss:%.3f' %(epoch+1,i+1,loss))
-            # # scheduler.step()
+                running_loss = 0.0
 
     def updata_data(dataloader):
         print("update data")
