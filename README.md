@@ -1,3 +1,15 @@
+# About the Fork
+
+This project was forked from [VulHunter](https://github.com/Secbrain/VulHunter) to evaluate the model independently (See https://github.com/stephan-klein/mlsc)
+
+It includes only minor infrastructural changes.
+
+List of changes:
+- Added [devcontainer](https://containers.dev/) configuration installing all dependencies and also solc
+- We install python dependencies from scratch, because the provided venv is corrupted
+- Pack some chinese/windows fonts into the devcontainer and use them in `report_english.py` otherwise the inference `--report` option would fail
+
+
 # 🏹 TSE_VulHunter
 This project is the supporting material of the paper titled "VulHunter: Hunting Vulnerable Smart Contracts at EVM bytecode-level via Multiple Instance Learning", including: dataset, detection results, source code, etc.
 
