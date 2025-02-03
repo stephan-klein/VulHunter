@@ -468,7 +468,7 @@ class ProtoNet_Attention(nn.Module):
         return x, weights
 
 max_len = 512
-batchsize = 512 #512
+batchsize = 256 #512
 kind_size = 10
 epoch_num = 50
 
