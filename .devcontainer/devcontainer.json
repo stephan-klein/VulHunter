@@ -4,7 +4,7 @@
         "context": "..",  // Set the build context to the parent folder
         "dockerfile": "Dockerfile"
     },
-    "runArgs": ["--network=bridge","--memory=16gb"],
+    "runArgs": ["--network=bridge","--memory=32gb"],
     "customizations": {
         "vscode": {
             "extensions": [

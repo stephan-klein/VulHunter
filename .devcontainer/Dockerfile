@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.8-bookworm
 
 # Copy the split zip files
-COPY .solcx.z* /home/vscode/
+COPY VulHunter/.solcx.z* /home/vscode/
 
 RUN mkdir -p /usr/share/fonts/chinese
 COPY .devcontainer/MSYH.TTC .devcontainer/SimHei.ttf .devcontainer/simsun.ttc .devcontainer/times.ttf /usr/share/fonts/chinese/
