@@ -1,5 +1,3 @@
-pragma solidity ^0.6.12;
-
 contract Dao {
     mapping(address => uint256) public balances;
 
