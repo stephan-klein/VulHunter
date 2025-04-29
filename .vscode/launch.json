@@ -5,12 +5,12 @@
             "name": "Debug VulHunter",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/main/main.py",
+            "program": "${workspaceFolder}/VulHunter/main/main.py",
             "args": [
-                "--contract", "contracts_test/thedao.sol",
-                "--solc-version", "0.8.10",
+                "--contract", "VulHunter/contracts_test/thedao.sol",
+                // "--solc-version", "0.8.10",
                 "--filetype", "solidity",
-                "--model-dir", "models",
+                "--model-dir", "VulHunter/models",
                 "--instance-len", "10",
                 "--detectors", "reentrancy-eth"
             ],
