@@ -519,6 +519,9 @@ if __name__ == '__main__':
     # print(holeloops)
     holeloops_json = json.dumps(holeloops, cls=NpEncoder)
     print(holeloops_json)
+    # dump vulnerability report to file
+    with open('output.json', 'w') as f:
+        f.write(holeloops_json)
 
     print("The information of report generation:")
 
