@@ -15,7 +15,7 @@ RUN fc-cache -f -v
 # Create .solcx directory and handle the split zip files
 RUN cd /root && \
     zip -F .solcx.zip --out /root/solc_complete.zip && \
-    unzip solc_complete.zip && \
+    unzip solc_complete.zip -d .solcx && \
     rm solc_complete.zip && \
     rm .solcx.z* && \
     chmod -R 777 /root/.solcx/*

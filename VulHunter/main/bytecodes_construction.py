@@ -19,7 +19,7 @@ import sys
 # from sklearn import metrics
 # import sklearn
 import json
-
+import traceback
 from decimal import *
 import pyevmasm
 from pyevmasm import disassemble_hex
@@ -1852,7 +1852,10 @@ def make_bytecodes_opcodes_mapping_for_solidity_file(file_path, solc_version, in
             evm_opcodes_maps = {}
             evm_pc_maps = {}
 
-            result = compile_source(file_content)
+            if solc_version.startswith('0.8'):
+                result = compile_source(file_content, output_values=['bin-runtime', 'asm'])
+            else:
+                result = compile_source(file_content)
             begin_blocks = []
 
             contract_names = []
@@ -1957,8 +1960,9 @@ def make_bytecodes_opcodes_mapping_for_solidity_file(file_path, solc_version, in
                 pcs_lists.append(pcs_lists_val)
             # print(len(bytecodes_lists[0]))
             return bytecodes_lists, contract_names, opcodes_lists, pcs_lists #10
-        except Exception:
-        #             print("except:")
+        except Exception as e:
+            print(f"except: {e}")
+            traceback.print_exc()
             try:
                 set_solc_version('v0.4.24')
                 f = open(file_path)
