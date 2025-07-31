@@ -17,6 +17,20 @@
             "console": "integratedTerminal",
             "justMyCode": false,
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Instance Generation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/VulHunter/main/main.py",
+            "args": [
+                "--train-contracts", "Dataset_CGT/cgt",
+                "--train-solcversions", "Dataset_CGT/ds_solc_versions.json",
+                "--instance-dir", "input"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

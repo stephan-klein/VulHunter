@@ -15,7 +15,7 @@ RUN fc-cache -f -v
 # Create .solcx directory and handle the split zip files
 RUN cd /home/vscode && \
     zip -F .solcx.zip --out /home/vscode/solc_complete.zip && \
-    unzip solc_complete.zip && \
+    unzip solc_complete.zip -d .solcx && \
     rm solc_complete.zip && \
     rm .solcx.z* && \
     chmod -R 777 /home/vscode/.solcx/*
