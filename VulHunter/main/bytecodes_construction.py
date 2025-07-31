@@ -35,6 +35,7 @@ import pandas as pd
 # import time
 # import random
 import gc
+import traceback
 
 class NpEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -304,6 +305,7 @@ def make_bytecodes():
                 except Exception as e:
                     # print(e)
                     print(contract_file_name + " compiled faild!")
+                    traceback.print_exc()
             index = index + 1
             # print(index)
             if index % 200 == 0:
@@ -480,6 +482,7 @@ def make_bytecodes_avgloc():
                 except Exception as e:
                     # print(e)
                     print(contract_file_name + " compiled faild!")
+                    traceback.print_exc()
             index = index + 1
             # print(index)
             if index % 200 == 0:
@@ -547,6 +550,7 @@ def make_bytecodes_continue2_bytecode():
         except Exception as e:
             print(e)
             print("{} {} compiled faild!".format(i, code_index))
+            traceback.print_exc()
         if (i+1) % 400 == 0:
             print("current file index: {}, success: {}".format(i, compile_true))
         if (i+1) % 20000 == 0:
@@ -711,6 +715,7 @@ def make_bytecodes_continue2(contract_root_dir, solcversions_path, instance_len,
                     # print(e)
                     false_files.append(contract_file_name)
                     print(contract_file_name + " compiled faild!")
+                    traceback.print_exc()
             index = index + 1
             # print(index)
             if index % 200 == 0:
@@ -913,6 +918,7 @@ def make_bytecodes_continue2_multi_methods():
                     # print(e)
                     false_files.append(contract_file_name)
                     print(contract_file_name + " compiled faild!")
+                    traceback.print_exc()
             index = index + 1
             # print(index)
             if index % 200 == 0:
@@ -1114,6 +1120,7 @@ def make_bytecodes_continue2_avg():
                     # print(e)
                     false_files.append(contract_file_name)
                     print(contract_file_name + " compiled faild!")
+                    traceback.print_exc()
             index = index + 1
             # print(index)
             if index % 200 == 0:
@@ -1282,6 +1289,7 @@ def make_bytecodes_continue2_bigdataset_1():
                 # print(e)
                 false_files.append(file)
                 print(file + " compiled faild!")
+                traceback.print_exc()
         # print(index)
         if (index+1) % 300 == 0:
             print("current file index: {}, success: {}".format(index+1, compile_true))
@@ -1449,6 +1457,7 @@ def make_bytecodes_continue2_event():
                 # print(e)
                 false_files.append(file)
                 print(file + " compiled faild!")
+                traceback.print_exc()
         # print(index)
         if (index+1) % 300 == 0:
             print("current file index: {}, success: {}".format(index+1, compile_true))
@@ -1594,6 +1603,7 @@ def make_bytecodes_for_solidity_file(file_path, solc_version, instance_len):
                 return bytecodes_lists[:instance_len], contract_names
             except Exception as e:
                 print("compiled faild!")
+                traceback.print_exc()
                 return None
     return None
 
@@ -1752,6 +1762,7 @@ def make_bytecodes_opcodes_for_solidity_file(file_path, solc_version, instance_l
                 return bytecodes_lists, contract_names, opcodes_lists #10
             except Exception as e:
                 print("compiled faild!")
+                traceback.print_exc()
                 return None
     return None
 
@@ -2067,6 +2078,7 @@ def make_bytecodes_opcodes_mapping_for_solidity_file(file_path, solc_version, in
                 return bytecodes_lists, contract_names, opcodes_lists, pcs_lists #10
             except Exception as e:
                 print("compiled faild!")
+                traceback.print_exc()
                 return None
     return None
 
