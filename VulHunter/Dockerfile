@@ -41,5 +41,6 @@ COPY docs/ ./docs/
 COPY contracts_test/ ./contracts_test/
 COPY main/ ./main/
 COPY models/ ./models/
+COPY models_train/ ./models_train/
 COPY fonts/ ./fonts/
 COPY README.md ./
