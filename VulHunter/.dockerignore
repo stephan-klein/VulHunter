@@ -1,8 +1,0 @@
-# Ignore everything except the folders you want
-*
-!.devcontainer/
-!docs/
-!main/
-!models/
-!fonts/
-!README.md
