@@ -1,0 +1,735 @@
+vscode ➜ /workspaces/VulHunter/VulHunter (main) $ python3 main/main.py --train-labels input/cgt_final_labels.json --contract-instances input/cgt_final_instances.json --model-dir models_train --detectors reentra
+ncy-eth
+Trainning the detection models...
+train_labels  input/cgt_final_labels.json
+contract_instances  input/cgt_final_instances.json
+model_dir  models_train
+reentrancy-eth working!
+train_bytecode 471
+test_bytecode 120
+train_label 471
+test_label 120
+data length:
+471
+471
+120
+120
+data load successfully!
+Trainset subitem len :4673
+Testset subitem len :1198
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 0 training time: 304.03 seconds
+0 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 0, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 1 training time: 214.59 seconds
+1 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 1, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 2 training time: 214.87 seconds
+2 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 2, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 3 training time: 219.36 seconds
+3 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 3, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 4 training time: 228.21 seconds
+4 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 4, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 5 training time: 247.87 seconds
+5 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 5, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 6 training time: 216.56 seconds
+6 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 6, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 7 training time: 186.26 seconds
+7 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 7, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 8 training time: 192.52 seconds
+8 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 8, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 9 training time: 193.89 seconds
+9 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 9, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 10 training time: 197.96 seconds
+10 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 10, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 11 training time: 202.86 seconds
+11 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 11, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 12 training time: 191.95 seconds
+12 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 12, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 13 training time: 192.44 seconds
+13 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 13, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 14 training time: 193.18 seconds
+14 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 14, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 15 training time: 191.58 seconds
+15 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 15, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 16 training time: 192.24 seconds
+16 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 16, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 17 training time: 185.78 seconds
+17 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 17, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 18 training time: 191.59 seconds
+18 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+model save models_train!
+Best accuracy on test set, epoch: 18, accuracy: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 19 training time: 184.23 seconds
+19 Accuracy on test set: 0.6833333333333333, recall: 0.05, precision: 1.0, f1: 0.09523809523809523
+model save models_train!
+Best accuracy on test set, epoch: 19, accuracy: 0.6833333333333333, recall: 0.05, precision: 1.0, f1: 0.09523809523809523
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 20 training time: 182.94 seconds
+20 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+Best accuracy on test set, epoch: 19, accuracy: 0.6833333333333333, recall: 0.05, precision: 1.0, f1: 0.09523809523809523
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+/usr/local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch 21 training time: 182.39 seconds
+21 Accuracy on test set: 0.6666666666666666, recall: 0.0, precision: 0.0, f1: 0.0
+Best accuracy on test set, epoch: 19, accuracy: 0.6833333333333333, recall: 0.05, precision: 1.0, f1: 0.09523809523809523
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 22 training time: 192.73 seconds
+22 Accuracy on test set: 0.8083333333333333, recall: 0.5, precision: 0.8695652173913043, f1: 0.634920634920635
+model save models_train!
+Best accuracy on test set, epoch: 22, accuracy: 0.8083333333333333, recall: 0.5, precision: 0.8695652173913043, f1: 0.634920634920635
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 23 training time: 200.98 seconds
+23 Accuracy on test set: 0.7666666666666667, recall: 0.325, precision: 0.9285714285714286, f1: 0.48148148148148157
+Best accuracy on test set, epoch: 22, accuracy: 0.8083333333333333, recall: 0.5, precision: 0.8695652173913043, f1: 0.634920634920635
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 24 training time: 191.21 seconds
+24 Accuracy on test set: 0.7333333333333333, recall: 0.225, precision: 0.9, f1: 0.36000000000000004
+Best accuracy on test set, epoch: 22, accuracy: 0.8083333333333333, recall: 0.5, precision: 0.8695652173913043, f1: 0.634920634920635
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 25 training time: 192.94 seconds
+25 Accuracy on test set: 0.825, recall: 0.525, precision: 0.9130434782608695, f1: 0.6666666666666667
+model save models_train!
+Best accuracy on test set, epoch: 25, accuracy: 0.825, recall: 0.525, precision: 0.9130434782608695, f1: 0.6666666666666667
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 26 training time: 193.60 seconds
+26 Accuracy on test set: 0.7583333333333333, recall: 0.3, precision: 0.9230769230769231, f1: 0.4528301886792453
+Best accuracy on test set, epoch: 25, accuracy: 0.825, recall: 0.525, precision: 0.9130434782608695, f1: 0.6666666666666667
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 27 training time: 182.96 seconds
+27 Accuracy on test set: 0.8083333333333333, recall: 0.55, precision: 0.8148148148148148, f1: 0.6567164179104479
+Best accuracy on test set, epoch: 25, accuracy: 0.825, recall: 0.525, precision: 0.9130434782608695, f1: 0.6666666666666667
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 28 training time: 185.90 seconds
+28 Accuracy on test set: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+model save models_train!
+Best accuracy on test set, epoch: 28, accuracy: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 29 training time: 192.37 seconds
+29 Accuracy on test set: 0.8166666666666667, recall: 0.6, precision: 0.8, f1: 0.6857142857142857
+Best accuracy on test set, epoch: 28, accuracy: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 30 training time: 193.09 seconds
+30 Accuracy on test set: 0.8083333333333333, recall: 0.525, precision: 0.84, f1: 0.6461538461538462
+Best accuracy on test set, epoch: 28, accuracy: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 31 training time: 199.84 seconds
+31 Accuracy on test set: 0.775, recall: 0.775, precision: 0.6326530612244898, f1: 0.6966292134831462
+Best accuracy on test set, epoch: 28, accuracy: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 32 training time: 199.93 seconds
+32 Accuracy on test set: 0.8, recall: 0.525, precision: 0.8076923076923077, f1: 0.6363636363636364
+Best accuracy on test set, epoch: 28, accuracy: 0.825, recall: 0.625, precision: 0.8064516129032258, f1: 0.7042253521126761
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 33 training time: 200.09 seconds
+33 Accuracy on test set: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+model save models_train!
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 34 training time: 197.45 seconds
+34 Accuracy on test set: 0.825, recall: 0.6, precision: 0.8275862068965517, f1: 0.6956521739130435
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 35 training time: 199.93 seconds
+35 Accuracy on test set: 0.7833333333333333, recall: 0.525, precision: 0.75, f1: 0.6176470588235295
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 36 training time: 195.57 seconds
+36 Accuracy on test set: 0.8416666666666667, recall: 0.675, precision: 0.8181818181818182, f1: 0.7397260273972603
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 37 training time: 197.84 seconds
+37 Accuracy on test set: 0.8416666666666667, recall: 0.7, precision: 0.8, f1: 0.7466666666666666
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 38 training time: 190.34 seconds
+38 Accuracy on test set: 0.8416666666666667, recall: 0.725, precision: 0.7837837837837838, f1: 0.7532467532467533
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 39 training time: 185.70 seconds
+39 Accuracy on test set: 0.8083333333333333, recall: 0.775, precision: 0.6888888888888889, f1: 0.7294117647058822
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 40 training time: 184.10 seconds
+40 Accuracy on test set: 0.825, recall: 0.8, precision: 0.7111111111111111, f1: 0.7529411764705882
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 41 training time: 194.02 seconds
+41 Accuracy on test set: 0.825, recall: 0.825, precision: 0.7021276595744681, f1: 0.7586206896551724
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 42 training time: 196.80 seconds
+42 Accuracy on test set: 0.7833333333333333, recall: 0.825, precision: 0.6346153846153846, f1: 0.717391304347826
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 43 training time: 195.22 seconds
+43 Accuracy on test set: 0.8416666666666667, recall: 0.85, precision: 0.723404255319149, f1: 0.7816091954022989
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 44 training time: 207.42 seconds
+44 Accuracy on test set: 0.825, recall: 0.675, precision: 0.7714285714285715, f1: 0.72
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 45 training time: 232.14 seconds
+45 Accuracy on test set: 0.825, recall: 0.725, precision: 0.7435897435897436, f1: 0.7341772151898733
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 46 training time: 223.30 seconds
+46 Accuracy on test set: 0.8333333333333334, recall: 0.65, precision: 0.8125, f1: 0.7222222222222223
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 47 training time: 209.75 seconds
+47 Accuracy on test set: 0.8083333333333333, recall: 0.625, precision: 0.7575757575757576, f1: 0.6849315068493151
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 48 training time: 194.80 seconds
+48 Accuracy on test set: 0.8083333333333333, recall: 0.775, precision: 0.6888888888888889, f1: 0.7294117647058822
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
+/usr/local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+/usr/local/lib/python3.8/site-packages/torch/autocast_mode.py:141: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+update data
+end of predict
+data length: 3421
+ceshi!
+update datasets maker
+test datasets
+Epoch 49 training time: 200.86 seconds
+49 Accuracy on test set: 0.825, recall: 0.75, precision: 0.7317073170731707, f1: 0.7407407407407408
+Best accuracy on test set, epoch: 33, accuracy: 0.85, recall: 0.675, precision: 0.84375, f1: 0.75
