@@ -23,6 +23,9 @@ RUN cd /home/vscode && \
 # Set the working directory to the project root
 RUN pip install -v torch==1.10.1
 RUN pip install tqdm scikit-learn==1.0.2 pandas numpy==1.21.6 pyevmasm==0.2.3 py-solc-x==0.10.1 evm_cfg_builder==0.3.1 reportlab==3.6.12 seaborn==0.12.2 reportlab==3.6.12 joblib==1.3.2
+RUN pip install z3-solver==4.12.1.0
+RUN pip install "protobuf~=3.20" pyyaml pysha3 prettytable ply rlp intervaltree "crytic-compile>=0.2.2" wasm "dataclasses; python_version < '3.7'" "pyevmasm>=0.2.3" manticore==0.3.7
+RUN pip install manticore[native]
 
 # My own dependencies
 RUN pip install ipykernel
