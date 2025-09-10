@@ -1,13 +1,14 @@
 # About the Fork
+This project was forked from [VulHunter](https://github.com/Secbrain/VulHunter) for independent evaluation as part of master thesis "Machine Learning for Vulnerability Detection in Smart Contracts A Comparison of Approaches".
 
-This project was forked from [VulHunter](https://github.com/Secbrain/VulHunter) to evaluate the model independently (See https://github.com/stephan-klein/mlsc)
-
-It includes only minor infrastructural changes.
-
-List of changes:
+It provides the following infrastructural changes for integration into [SmartBugs](https://github.com/smartbugs/smartbugs):
 - Added [devcontainer](https://containers.dev/) configuration installing all dependencies and also solc
 - We install python dependencies from scratch, because the provided venv is corrupted
-- Pack some chinese/windows fonts into the devcontainer and use them in `report_english.py` otherwise the inference `--report` option would fail
+- Replaced the included solc binaries, some of which were corrupted and produced segmentation faults on execution
+- Provided a Dockerfile
+- Added missing fonts, which prevented the PDF report from being printed
+- Added logging of exceptions in case of solc compilation errors
+- Added writing of the JSON vulnerability report to a file additionally to stdout
 
 
 # 🏹 TSE_VulHunter
