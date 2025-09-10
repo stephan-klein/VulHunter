@@ -10,6 +10,10 @@ It provides the following infrastructural changes for integration into [SmartBug
 - Added logging of exceptions in case of solc compilation errors
 - Added writing of the JSON vulnerability report to a file additionally to stdout
 
+Build Instructions for SmartBugs container:
+1. `cd VulHunter`
+2. `docker build . -t smartbugs/vulhunter:0.1`
+
 
 # 🏹 TSE_VulHunter
 This project is the supporting material of the paper titled "VulHunter: Hunting Vulnerable Smart Contracts at EVM bytecode-level via Multiple Instance Learning", including: dataset, detection results, source code, etc.
