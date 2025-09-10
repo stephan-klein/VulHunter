@@ -10,6 +10,8 @@ It provides the following infrastructural changes for integration into [SmartBug
 - Added logging of exceptions in case of solc compilation errors
 - Added writing of the JSON vulnerability report to a file additionally to stdout
 
+Docker Image published at `deet0x/vulhunter:0.1`
+
 Build Instructions for SmartBugs container:
 1. `cd VulHunter`
 2. `docker build . -t smartbugs/vulhunter:0.1`
